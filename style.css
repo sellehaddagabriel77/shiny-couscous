@@ -1,0 +1,37 @@
+/* Hero Flex Layout */
+.hero-flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    text-align: left; /* Aligns text to the left of the image */
+}
+
+.hero-image img {
+    width: 280px;
+    height: 280px;
+    border-radius: 50%; /* Makes the image a circle */
+    object-fit: cover; /* Prevents stretching */
+    border: 8px solid var(--white);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+/* Adjustments for mobile screens */
+@media (max-width: 768px) {
+    .hero-flex {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .hero-image img {
+        width: 200px;
+        height: 200px;
+    }
+}
+
+/* Refined Header Background */
+header {
+    min-height: 80vh;
+    padding: 60px 0;
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+}
